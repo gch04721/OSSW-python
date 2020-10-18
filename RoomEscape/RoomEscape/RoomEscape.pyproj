@@ -4,13 +4,14 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>200e2345-939b-45df-9a43-4c2e40dc0431</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>RoomEscape.py</StartupFile>
+    <StartupFile>main.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
     <Name>RoomEscape</Name>
     <RootNamespace>RoomEscape</RootNamespace>
+    <IsWindowsApplication>False</IsWindowsApplication>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -21,12 +22,19 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="RoomEscape.py" />
+    <Compile Include="main.py">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="images\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="images\Books.png" />
+    <Content Include="images\Book_open.png" />
+    <Content Include="images\Cabinet_close.png" />
+    <Content Include="images\Cabinet_open.png" />
+    <Content Include="images\Desk.png" />
     <Content Include="images\문-오른쪽-닫힘.png" />
     <Content Include="images\문-오른쪽-열림.png" />
     <Content Include="images\문-왼쪽-닫힘.png" />
